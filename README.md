@@ -1,30 +1,35 @@
-# React + TypeScript + Vite
+# Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Config
 
-Currently, two official plugins are available:
+Build with :
+1. React JS v.18 (Vite JS)
+2. Typescript
+3. TailwindCss
+4. CLSX and Tailwind Merge
+5. Daisy UI (Tailwind UI Library
+6. Lucide React (Icons)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
 
-## Expanding the ESLint configuration
+Use PNPM or YARN or NPM
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```sh
+pnpm i
+pnpm dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Arcitecture
+
+1. Custom folder structure for best practice development
+2. Using TailwindCss for faster development
+3. Responsive for Desktop and Mobile
+4. Typescript type safety and Reduce bug purposes
+5. Daisy UI simple component library
+
+
+## Explanation
+
+1. TailwindCss - Kenapa menggunakan tailwindCss alasan nya karena mempercepat proses pembuatan atau development dan sudah banyak menjadi standart penggunaan untuk styling pada aplikasi web. Tailwind yang akan datang atau versi terbaru akan lebih cepat dari css native biasa karena menggunakan engine yang lebih baik.
+2. Daisy UI - Mengunakan ui libary component ini untuk memudahkan proses development, karena menggunakan base styling dari Tailwind, tentu ini hanya berlaku untuk range kebutuhan seperti apa, seperti contoh hanya company profile sudah lebih dari cukup namun apabila membuat dashboard atau backoffice lebih baik menggunakan library2 yang memang di peruntukan untuk hal tersebut seperti (Prime React , ANTD Design, dll..)
+3. Untuk beberapa stack lain yang memang belum di pakai di project, seperti React Query ,untuk integrasi, React Table untuk table component, untuk form bisa menggunakan React Hook Form dan ZOD/YUP untuk memvalidasi end user input.
